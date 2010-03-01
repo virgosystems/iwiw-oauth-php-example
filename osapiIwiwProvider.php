@@ -10,12 +10,12 @@ class osapiIwiwProvider extends osapiProvider {
   * @param  $baseURL the url of iwiw, can be sandbox.iwiw.hu, approval.iwiw.hu or iwiw.hu
   * @param osapiHttpProvider $httpProvider custom provider if neeeded
   */
-  public function __construct($baseURL = 'http://iwiw.hu', osapiHttpProvider $httpProvider = null) {
+  public function __construct($baseURL = 'http://iwiw.hu', $baseApiURL = 'http://api.iwiw.hu', osapiHttpProvider $httpProvider = null) {
   	parent::__construct(
-  	$baseURL.'/social/oauth/requestToken',
+  	$baseApiURL.'/social/oauth/requestToken',
   	$baseURL.'/pages/auth/authorize.jsp' ,
-  	$baseURL.'/social/oauth/accessToken',
-  	$baseURL.'/social/connect/rest',
+  	$baseApiURL.'/social/oauth/accessToken',
+  	$baseApiURL.'/social/connect/rest',
     '',
     'IWIW', 
   	true,

@@ -13,7 +13,7 @@
   *
   * @return osapi object
   */
- function initIWIWConnect($consumerKey, $consumerSecret, $iwiwBaseURL = "http://iwiw.hu") {
+ function initIWIWConnect($consumerKey, $consumerSecret, $iwiwBaseURL = "http://iwiw.hu", $iwiwBaseApiURL = "http://api.iwiw.hu") {
  	
  	// Log
  	osapiLogger::setLevel(osapiLogger::INFO);
@@ -28,7 +28,7 @@
  	//$storage = new osapiMemcacheStorage('127.0.0.1','11211');
  	
  	//the iwiw provider
- 	$provider = new osapiIwiwProvider($iwiwBaseURL);
+ 	$provider = new osapiIwiwProvider($iwiwBaseURL, $iwiwBaseApiURL);
  	
  	$auth = osapiOAuth3Legged::performOAuthLogin($consumerKey, $consumerSecret, $storage, $provider, $localUserId);
  	$osapi = new osapi($provider, $auth);

@@ -5,10 +5,13 @@
  $consumerKey='kulcs';
  $consumerSecret='titkos_kulcs';
 
- // iwiw url eg. sandbox.iwiw.hu, iwiw.hu
+ // iwiw url eg. sandbox.iwiw.hu, approval.iwiw.hu, iwiw.hu
  $iwiwBaseURL = 'http://sandbox.iwiw.hu';
+ 
+ // iwiw Api url eg. api.sandbox.iwiw.hu, api.approval.iwiw.hu, api.iwiw.hu
+ $iwiwBaseApiURL = 'http://api.sandbox.iwiw.hu';
  	
- $osapi = initIWIWConnect($consumerKey, $consumerSecret, $iwiwBaseURL);
+ $osapi = initIWIWConnect($consumerKey, $consumerSecret, $iwiwBaseURL, $iwiwBaseApiURL);
 
  if (osapi){
  	 
