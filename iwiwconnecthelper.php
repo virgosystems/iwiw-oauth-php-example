@@ -7,6 +7,7 @@
 
  require_once 'osapi.php';
  require_once 'osapiIwiwProvider.php';
+ require_once 'osapiOAuth3Legged_10a_iwiw.php';
 
  /**
   * configures and initializes the osapi object
@@ -30,11 +31,12 @@
  	//the iwiw provider
  	$provider = new osapiIwiwProvider($iwiwBaseURL, $iwiwBaseApiURL);
  	
- 	$auth = osapiOAuth3Legged::performOAuthLogin($consumerKey, $consumerSecret, $storage, $provider, $localUserId);
+ 	$auth = osapiOAuth3Legged_10a_iwiw::performOAuthLogin($consumerKey, $consumerSecret, $storage, $provider, $localUserId);
  	$osapi = new osapi($provider, $auth);
  	
  	return $osapi;  	
  }
+ 
  
  /**
   * Returns profile info and friends list

@@ -38,4 +38,5 @@ class osapiIwiwProvider extends osapiProvider {
     	$request->params['message']->type = 'notification';
     }
   }
+  
 }
