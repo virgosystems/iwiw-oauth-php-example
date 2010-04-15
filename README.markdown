@@ -13,11 +13,11 @@ vagy [letölthető zip-ben](http://github.com/virgo/iwiw-oauth-php-example/archi
 A példakód iWiW Homokozóval való használatához a következőket kell tenned:
 
 * index.php-ben add meg a kulcsodat és titkos kulcsodat (a [fejlesztői portálon](http://dev.iwiw.hu) szerezheted be őket):
- * $consumerKey='kulcs';
- * $consumerSecret='titkos_kulcs';
+  * $consumerKey='kulcs';
+  * $consumerSecret='titkos_kulcs';
 * Éles iWiW-en való használathoz:
- * $iwiwBaseURL = 'http://iwiw.hu';
- * $iwiwBaseApiURL = 'http://api.iwiw.hu';
+  * $iwiwBaseURL = 'http://iwiw.hu';
+  * $iwiwBaseApiURL = 'http://api.iwiw.hu';
 
 # Telepítés
 * Töltsd le az [OpenSocial PHP Client Libraryt 1.1.1](http://code.google.com/p/opensocial-php-client/)
