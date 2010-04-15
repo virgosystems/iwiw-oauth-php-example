@@ -5,7 +5,7 @@
   * 
   */
 
- require_once 'osapi.php';
+ require_once 'osapi/osapi.php';
  require_once 'osapiIwiwProvider.php';
  require_once 'osapiOAuth3Legged_10a_iwiw.php';
 

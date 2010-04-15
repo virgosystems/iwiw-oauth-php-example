@@ -2,16 +2,14 @@
  require_once "iwiwconnecthelper.php";
 
  // the application consumerKey and consumerSecret
-// $consumerKey='08254caeb237b367b8df1dc803f582bcedbd854c';
-// $consumerSecret='9d997e79062280733b12085e57c884894c385572'; 
- $consumerKey='klucs';
+ $consumerKey='kulcs';
  $consumerSecret='titkos_kulcs';
 
- // iwiw url eg. sandbox.iwiw.hu, approval.iwiw.hu, iwiw.hu
- $iwiwBaseURL = 'http://approval.iwiw.hu';
+ // iwiw url eg. sandbox.iwiw.hu, iwiw.hu
+ $iwiwBaseURL = 'http://sandbox.iwiw.hu';
  
- // iwiw Api url eg. api.sandbox.iwiw.hu, api.approval.iwiw.hu, api.iwiw.hu
- $iwiwBaseApiURL = 'http://api.approval.iwiw.hu';
+ // iwiw Api url eg. api.sandbox.iwiw.hu, api.iwiw.hu
+ $iwiwBaseApiURL = 'http://api.sandbox.iwiw.hu';
  	
  $osapi = initIWIWConnect($consumerKey, $consumerSecret, $iwiwBaseURL, $iwiwBaseApiURL);
 
